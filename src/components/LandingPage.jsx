@@ -1,9 +1,12 @@
+import Filters from "./Filters";
+
 const LandingPage = () => {
   return (
     <>
       <div className="main">
         <div className="filters">
           {/* Filters  */}
+          <Filters/>
         </div>
 
         <div className="job-card">

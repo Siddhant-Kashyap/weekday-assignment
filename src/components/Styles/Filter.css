@@ -1,0 +1,12 @@
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.filter-box{
+    display: inline-block;
+    margin: 5px; 
+    text-align: center;
+    padding: 7px;
+   
+}
