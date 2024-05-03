@@ -120,10 +120,6 @@ const JobCard = ({ job }) => {
           </Button>
         </a>
       </div>
-
-      {/* <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
-        JD Link: <a href={job.jdLink}>{job.jdLink}</a>
-      </Typography> */}
     </CardContent>
   </Card>
   )

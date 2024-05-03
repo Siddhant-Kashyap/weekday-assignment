@@ -8,19 +8,6 @@ import { useEffect, useState } from "react";
 const FilterBox = ({ roles }) => {
   const dispatch = useDispatch();
   const [selectedOptions, setSelectedOptions] = useState([]);
-//   const [selectedCategory, setSelectedCategory] = useState(null);
-
-//   const handleChange = (event, value) => {
-//     if (value.length === 0 || !selectedCategory) {
-//       setSelectedOptions(value);
-//     } else {
-//       dispatch(removeFilter(selectedCategory)); 
-//       setSelectedCategory(value[0].dept);
-     
-//       dispatch(addFilter(value[0].dept)); // Add new selected category as filter
-//       setSelectedOptions([]);
-//     }
-//   };
 useEffect(()=>{
 
 

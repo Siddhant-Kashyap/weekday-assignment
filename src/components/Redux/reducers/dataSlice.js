@@ -30,7 +30,7 @@ const initialState = {
   data: [],
   loading: false,
   error: null,
-  limit: 10,
+  limit: 20,
   offset: 0,
 };
 
