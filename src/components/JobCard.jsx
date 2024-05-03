@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import JobSubCard from "./JobSubCard";
 import HourglassTopSharp from "@mui/icons-material/HourglassTopSharp"
 import BoltIcon from "@mui/icons-material/Bolt"
+import blurredDP from "../assets/blurreddp.jpg";
 import Avatar from "@mui/material/Avatar";
 const JobCard = ({ job }) => {
     const truncatedDetails = job.jobDetailsFromCompany
