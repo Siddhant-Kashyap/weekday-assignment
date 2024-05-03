@@ -3,6 +3,13 @@
 
 Welcome to the Job Searching Application! This application allows users to search for jobs based on various filters such as role, salary, experience, and location. The application provides a responsive design for a seamless user experience.
 
+
+##Tech Stack Followed for the Assignment 
+- [x] **React.js**: A JavaScript library for building user interfaces.
+- [x] **Redux**: A predictable state container for JavaScript apps.
+- [x] **CSS**: Cascading Style Sheets for styling web pages.
+- [x] **Material UI**: A popular React UI framework implementing Google's Material Design.
+
 ## Local Installation Guide
 
 Follow these steps to set up the application locally on your machine:
@@ -41,5 +48,4 @@ npm run dev
 ```
 
 This command will start the server and open the application in your default web browser. If it doesn't open automatically, you can access the application at localhost and given port in terminal
-
 
