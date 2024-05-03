@@ -1,26 +1,38 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  filters: [],
+  filters: {},
 };
 
 const filterSlice = createSlice({
-  name: 'filter',
+  name: "filter",
   initialState,
   reducers: {
     addFilter: (state, action) => {
-        state.filters = [];
-        state.filters.push(...action.payload);
-      },
+      const payload = action.payload;
+      if (Array.isArray(payload)) {
+        state.filters = { ...state.filters, roles: payload };
+      } else if (typeof payload === "object") {
+        const label = Object.keys(payload)[0];
+        state.filters = { ...state.filters, [label]: payload[label] };
+      }
+    },
     removeFilter: (state, action) => {
-      state.filters = state.filters.filter(filter => filter !== action.payload);
+      const filterKey = action.payload;
+      const { [filterKey]: removedFilter, ...restFilters } = state.filters;
+      state.filters = restFilters;
     },
     clearFilters: (state) => {
-      state.filters = [];
+      state.filters = {};
     },
+    updateFilter: (state, action) => {
+        const payload = action.payload;
+        const label = Object.keys(payload)[0];
+        state.filters = { ...state.filters, [label]: payload[label] };
+      },
   },
 });
 
-export const { addFilter, removeFilter, clearFilters } = filterSlice.actions;
+export const { addFilter, removeFilter, clearFilters,updateFilter } = filterSlice.actions;
 
 export default filterSlice.reducer;

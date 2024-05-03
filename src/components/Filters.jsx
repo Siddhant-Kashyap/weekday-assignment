@@ -25,7 +25,7 @@ const Filters = () => {
         <OtherFilterBox options={remote} label={"Remote"} multi={true}/>
         </div>
         <div  className="filter-box">
-        <OtherFilterBox options={Salary} label={"Salary"} multi={false}/>
+        <OtherFilterBox options={Salary} label={"Salary In USD"} multi={false}/>
         </div>
         <div  className="filter-box">
         <Search/>
