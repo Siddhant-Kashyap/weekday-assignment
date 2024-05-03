@@ -4,7 +4,7 @@
 Welcome to the Job Searching Application! This application allows users to search for jobs based on various filters such as role, salary, experience, and location. The application provides a responsive design for a seamless user experience.
 
 
-##Tech Stack Followed for the Assignment 
+## Tech Stack Followed for the Assignment 
 - [x] **React.js**: A JavaScript library for building user interfaces.
 - [x] **Redux**: A predictable state container for JavaScript apps.
 - [x] **CSS**: Cascading Style Sheets for styling web pages.
